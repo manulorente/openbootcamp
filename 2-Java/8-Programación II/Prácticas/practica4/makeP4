@@ -1,0 +1,79 @@
+##################################################################################
+#   Makefile para la practica 4: Excepciones.
+##################################################################################
+
+##################################################################################
+#   Errores de ejecucion en el lenguaje de programacion  C
+##################################################################################
+
+compila_c00:
+	mkdir -p ./bin/fp2/c/
+	gcc -W -Wall -o ./bin/fp2/c/Practica4Ejercicio00 ./src/fp2/c/Practica4Ejercicio00.c
+ejecuta_c00:
+	./bin/fp2/c/Practica4Ejercicio00
+
+##################################################################################
+#    Excepciones en Java
+##################################################################################
+ejecuta01: 
+	java -classpath ./bin fp2.poo.practica4.Practica4Ejercicio01
+
+ejecuta02: 
+	java -classpath ./bin fp2.poo.practica4.Practica4Ejercicio02
+	
+ejecuta03: 
+	java -classpath ./bin fp2.poo.practica4.Practica4Ejercicio03
+
+ejecuta04: 
+	java -classpath ./bin fp2.poo.practica4.Practica4Ejercicio04
+
+ejecuta05: 
+	java -classpath ./bin fp2.poo.practica4.Practica4Ejercicio05
+		
+ejecuta06a: 
+	java -classpath ./bin fp2.poo.practica4.Practica4Ejercicio06 
+	
+ejecuta06b: 
+	java -classpath ./bin fp2.poo.practica4.Practica4Ejercicio06 argumentoEnLineaDeComandos
+	
+ejecuta08a: 
+	java -classpath ./bin fp2.poo.practica4.Practica4Ejercicio08
+
+ejecuta08b: 
+	java -classpath ./bin fp2.poo.practica4.Practica4Ejercicio08 argumentoEnLineaDeComandos
+		
+ejecuta08c: 
+	java -classpath ./bin fp2.poo.practica4.Practica4Ejercicio08 argumento1 argumento2
+
+ejecuta09: 
+	java -classpath ./bin fp2.poo.practica4.Practica4Ejercicio09 
+		
+ejecuta11: 
+	java -classpath ./bin fp2.poo.practica4.Practica4Ejercicio11
+	
+ejecuta12: 
+	java -classpath ./bin fp2.poo.practica4.Practica4Ejercicio12
+
+ejecuta13: 
+	java -classpath ./bin fp2.poo.practica4.Practica4Ejercicio13Main
+	
+compilaJava: 
+	javac -encoding ISO-8859-1 -g -Xlint -classpath ./bin/ -d ./bin/  ./src/fp2/poo/practica4/Practica4Ejercicio01.java
+	javac -encoding ISO-8859-1 -g -Xlint -classpath ./bin/ -d ./bin/  ./src/fp2/poo/practica4/Practica4Ejercicio02.java
+	javac -encoding ISO-8859-1 -g -Xlint -classpath ./bin/ -d ./bin/  ./src/fp2/poo/practica4/Practica4Ejercicio03.java
+	javac -encoding ISO-8859-1 -g -Xlint -classpath ./bin/ -d ./bin/  ./src/fp2/poo/practica4/Practica4Ejercicio04.java
+	javac -encoding ISO-8859-1 -g -Xlint -classpath ./bin/ -d ./bin/  ./src/fp2/poo/practica4/Practica4Ejercicio05.java
+	javac -encoding ISO-8859-1 -g -Xlint -classpath ./bin/ -d ./bin/  ./src/fp2/poo/practica4/Practica4Ejercicio06.java
+	javac -encoding ISO-8859-1 -g -Xlint -classpath ./bin/ -d ./bin/  ./src/fp2/poo/practica4/Practica4Ejercicio08.java
+	javac -encoding ISO-8859-1 -g -Xlint -classpath ./bin/ -d ./bin/  ./src/fp2/poo/practica4/Practica4Ejercicio09.java
+	javac -encoding ISO-8859-1 -g -Xlint -classpath ./bin/ -d ./bin/  ./src/fp2/poo/practica4/Practica4Ejercicio11.java
+	javac -encoding ISO-8859-1 -g -Xlint -classpath ./bin/ -d ./bin/  ./src/fp2/poo/practica4/Practica4Ejercicio12.java
+	javac -encoding ISO-8859-1 -g -Xlint -classpath ./bin/ -d ./bin/  ./src/fp2/poo/practica4/Practica4Ejercicio13Exception.java
+	javac -encoding ISO-8859-1 -g -Xlint -classpath ./bin/ -d ./bin/  ./src/fp2/poo/practica4/Practica4Ejercicio13Main.java
+
+compila07:
+	javac -encoding ISO-8859-1 -g -Xlint -classpath ./bin/ -d ./bin/  ./src/fp2/poo/practica4/Practica4Ejercicio07.java
+
+compila10:
+	javac -encoding ISO-8859-1 -g -Xlint -classpath ./bin/ -d ./bin/  ./src/fp2/poo/practica4/Practica4Ejercicio10.java
+

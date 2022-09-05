@@ -1,0 +1,24 @@
+/*
+ *  Fichero: Usuario.java
+ *
+ *  Fundamentos de Programacion II. GITT.
+ *  Departamento de Ingenieria Telematica
+ *  Universidad de Sevilla
+ *  
+ */
+
+package fp2.poo.practica3;
+
+
+public class Usuario extends Persona{
+    
+    Persona a = new Persona;
+    a.setNombre("paco");
+    a.setPrimerApellido("porras");
+    a.setSegundoApellido("martinez");
+    a.setDNI("77844597k");
+    a.setDomicilio("calle pureza nº 11 1ºD");
+       
+}
+
+

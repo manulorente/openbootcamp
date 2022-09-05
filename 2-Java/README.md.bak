@@ -1,0 +1,54 @@
+# Java cheatsheet  
+
+
+## Java project directories
+
+### `src` contains my `*.java` files  
+
+### `bin` contains my `*.class` files (compiled using the files in `src`)  
+
+### `lib` contains a few `*.jar` files imported by most of the `src` files  
+  
+<br/>
+
+### 1 - Download desired version from `https://jdk.java.net/`  
+
+### 2 - Place unzipped JDK folder on `%USERPROFILE%\.jdks`  
+
+### 3 - Configure `JAVA_HOME` environment variable with desired version `%USERPROFILE%\.jdks\jdk-18.0.2`
+
+### 4 - Add `%JAVA_HOME%\bin` to `PATH` environment variable  
+
+<br/>
+
+## Useful tips
+
+### 1 - Change directory to project folder  
+
+### 2 - Compile:  `javac -g --sourcepath src -d bin src/<package name>/*.java`  
+
+### 3 - Execute:  `java -cp bin <package name>.<class name>`  
+
+### 4 - Debug:  `jdb -sourcepath src -classpath bin <package name>.<class name>`  
+
+    breakpoints (line): stop at <class name>:<Line no> 
+
+    breakpoints (method or variable): stop in <class name>:< Method name | Variable name>
+
+    run: After starting JDB and setting the necessary breakpoints, you can use this command to start execution and debug an application.  
+
+    cont: Continues execution of the debugged application after a breakpoint, exception, or step
+
+    print: Displays Java objects and primitive values  
+
+    dump: For primitive values, this command is identical to print. For objects, it prints the current value of each field defined in the object. Static and instance fields are included  
+
+    threads: Lists the threads that are currently running  
+
+    thread: Selects a thread to be the current thread  
+
+    where: Dumps the stack of the current thread  
+
+    step: steps to the next line of execution
+
+    list: examines where you are in the code

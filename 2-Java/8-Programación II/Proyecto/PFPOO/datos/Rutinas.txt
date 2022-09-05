@@ -1,0 +1,15 @@
+Rutina 1
+Carrera continua alternando intervalos de velocidad
+3
+30
+----------
+Rutina 2
+Trabajo de pectoral, cuadriceps , triceps y sentadillas
+5
+45
+----------
+Rutina 3
+Trabajo de pesas maximas, mucho peso pocas repeticiones
+2
+15
+----------

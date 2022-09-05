@@ -1,0 +1,71 @@
+/*
+ *  @(#)RutinaDeEntrenamiento.java
+ *
+ *  Fundamentos de Programacion II. GITT.
+ *  Departamento de Ingenieria Telematica
+ *  Universidad de Sevilla
+ *  
+ */
+
+package fp2.poo.pfpoomanloralm;
+
+import fp2.poo.utilidades.RutinaDeEntrenamientoInterfaz;
+
+public class RutinaDeEntrenamiento implements RutinaDeEntrenamientoInterfaz
+{
+    private String entreno;
+    private String descripcionEntreno;
+    private int frecuenciaEntreno;
+    private int tiempoEntreno;
+
+    public RutinaDeEntrenamiento(String identificador, String descripcion,
+				 int frecuency, int time)
+    {
+	setIdEntrenamiento(identificador);
+	setDescripcion(descripcion);
+	setFrecuencia(frecuency);
+	setTiempo(time);
+    }
+    
+    public String getIdEntrenamiento()
+    {
+	return entreno;
+    }
+    
+    public void setIdEntrenamiento (String id)
+    {
+	entreno = id;
+    }
+    
+    public String getDescripcion()
+    {
+	return descripcionEntreno;
+    }
+    
+    public void setDescripcion (String id)
+    {
+	descripcionEntreno = id;
+    }
+    
+    public int getFrecuencia()
+    {
+	return frecuenciaEntreno;
+    }
+    
+    public void setFrecuencia( int frecuencia)
+    {
+	frecuenciaEntreno = frecuencia;
+    }
+
+    public int getTiempo()
+    {
+	return tiempoEntreno;
+    }
+    
+    public void setTiempo( int tiempo)
+    {
+	tiempoEntreno = tiempo;
+    }
+
+
+}

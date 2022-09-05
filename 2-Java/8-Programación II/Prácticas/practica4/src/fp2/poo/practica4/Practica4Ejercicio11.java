@@ -1,0 +1,38 @@
+/*
+ *  @(#)Practica4Ejercicio11.java
+ *
+ *  Fundamentos de Programacion II. GITT.
+ *  Departamento de Ingenieria Telematica
+ *  Universidad de Sevilla
+ *  
+ */
+
+
+/**
+ * Descripcion: Declaracion de metodo con throws.
+ *              
+ *
+ * version 1.0 Mayo 2011
+ * Fundamentos de Programacion II
+ */
+ 
+package fp2.poo.practica4;
+
+import java.lang.IllegalAccessException;
+
+class Practica4Ejercicio11 {
+    static void metodoDemo () throws IllegalAccessException{
+        System.out.println("Dentro de metodoDemo");
+	throw new IllegalAccessException("alternativa");
+    }
+
+    public static void main (String args[]){
+        try{
+            Practica4Ejercicio11.metodoDemo();
+        }catch(IllegalAccessException e){
+            System.out.println("Captura "+e);
+        }
+    }
+}
+
+

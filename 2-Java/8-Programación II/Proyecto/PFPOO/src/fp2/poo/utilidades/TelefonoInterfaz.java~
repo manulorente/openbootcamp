@@ -1,0 +1,27 @@
+/*
+ *  @(#)TelefonoInterfaz.java
+ *
+ *  Fundamentos de Programacion II. GITT.
+ *  Departamento de Ingenieria Telematica
+ *  Universidad de Sevilla
+ *  
+ */
+
+package fp2.poo.utilidades;
+
+import  fp2.poo.utilidades.Excepciones.TelefonoIncorrectoExcepcion;
+
+public interface TelefonoInterfaz{
+
+    /**
+     * Descripcion: Devuelve el valor del telefono.
+     */
+    public String getTelefono();
+
+    /**
+     * Descripcion: Asigna un valor del telefono.
+     */
+    public void setTelefono( String t )  throws TelefonoIncorrectoExcepcion ;
+
+
+}

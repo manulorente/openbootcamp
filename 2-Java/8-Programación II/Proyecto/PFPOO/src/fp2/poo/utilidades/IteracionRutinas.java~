@@ -1,0 +1,40 @@
+/*
+ *  @(#)IteracionRutinas.java
+ *
+ *  Fundamentos de Programacion II. GITT.
+ *  Departamento de Ingenieria Telematica
+ *  Universidad de Sevilla
+ *  
+ */
+
+
+package fp2.poo.utilidades;
+
+import  fp2.poo.utilidades.Excepciones.OperacionNoPermitidaExcepcion;
+import  fp2.poo.utilidades.RutinaDeEntrenamientoInterfaz;
+
+/**
+ * Descripcion: Esta interfaz proporciona los método para
+ *              realizar la lectura de las rutinas de un fichero.
+ *              
+ *
+ *              
+ *                             
+ * @version version 1.0 Mayo 2013
+ * @author  Fundamentos de Programacion II
+ */
+public interface IteracionRutinas {
+
+    /*
+     *  Descripcion: Este metodo devuelve una referencia a RutinaDeEntrenamientoInterfaz. 
+     */
+    public RutinaDeEntrenamientoInterfaz siguienteRutina( ) throws OperacionNoPermitidaExcepcion;
+
+    /*
+     *  Descripcion: Este metodo indica si hay otro objeto RutinaDeEntrenamiento.
+     *
+     *  @return    Devuelve un valor del tipo boolean que indica
+     *             si hay más objetos del tipo RutinaDeEntrenamiento.
+     */
+    public boolean haySiguienteRutina();
+}

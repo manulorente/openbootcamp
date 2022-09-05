@@ -1,0 +1,45 @@
+/*
+ *  @(#)CorreoElectronico.java
+ *
+ *  Fundamentos de Programacion II. GITT.
+ *  Departamento de Ingenieria Telematica
+ *  Universidad de Sevilla
+ *  
+ */
+
+package fp2.poo.pfpoomanloralm;
+
+import fp2.poo.utilidades.Excepciones.CorreoElectronicoIncorrectoExcepcion;
+import fp2.poo.utilidades.CorreoElectronicoInterfaz;
+
+public class CorreoElectronico implements CorreoElectronicoInterfaz
+{
+    private String correo;
+    
+    public CorreoElectronico(String cadena)throws CorreoElectronicoIncorrectoExcepcion
+    {
+	setCorreoElectronico(cadena);
+    }
+    
+    public String getCorreoElectronico()
+    {
+	return correo;
+    }
+    
+    public void setCorreoElectronico(String email)throws CorreoElectronicoIncorrectoExcepcion
+    {
+	int caracter = 0;
+	int i = 0;
+	
+	for( i = 0; i < email.length(); i++)
+	 {
+	     if ('@' == email.charAt(i))
+		 caracter++;
+		
+		  }
+	if (caracter != 1)
+	    throw new CorreoElectronicoIncorrectoExcepcion("Correo electronico incorrecto\n");
+	else
+	    correo = email;
+    }
+}

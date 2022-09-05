@@ -1,0 +1,33 @@
+/*
+ *  @(#)DomicilioInterfaz.java
+ *
+ *  Fundamentos de Programacion II. GITT.
+ *  Departamento de Ingenieria Telematica
+ *  Universidad de Sevilla
+ *  
+ */
+
+package fp2.poo.pfpoomanloralm;
+
+import fp2.poo.utilidades.DomicilioInterfaz;
+
+public class Domicilio implements DomicilioInterfaz
+{
+    private String nombreDomicilio;
+    
+    public Domicilio(String cadena)
+    {
+	setDomicilio(cadena);
+    }
+    
+    public String getDomicilio()
+    {
+	return this.nombreDomicilio;
+    }
+    
+    public void setDomicilio(String nombre)
+    {
+	nombreDomicilio = nombre;
+    }
+    
+}
